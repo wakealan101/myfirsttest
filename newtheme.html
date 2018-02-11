@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>Rabbit Ninja</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body class="w3-indigo">
+<!--header-->
+<header class="w3-container w3-indigo">
+  <center>
+  <img src="E:\blog work\rabbit.png" class="w3-circle" alt="Shubham Mishra" width="10%">
+  <h1>
+  <b>
+  Rabbit
+  </b>
+  </h1>
+  </center>
+</header>
+<!--header end-->
+<!--slides-->
+<div class="w3-content" style="max-width:100%">
+  <!--slide 1-->
+  <div class="mySlides w3-container w3-indigo">
+  <div class="w3-container w3-center w3-animate-zoom">
+  <center>
+    <h1><b>Welcome!</b></h1>
+    <h1><i>I am Rabbit Ninja !!!!</i></h1>
+  </center>
+  </div>
+  </div>
+  <!--slide 1 end-->
+  <!--slide 2-->
+  <div class="mySlides w3-container w3-indigo">
+  <div class="w3-container w3-center w3-animate-zoom">
+  <center>
+    <h1><b>I do everything...</b></h1>
+    <h1><i>yes everything! means everything! (except for bad work)</i></h1>
+  </center>
+  </div>
+  </div>
+  <!--slide 2 end-->
+  <!--slide 3-->
+  <div class="mySlides w3-container w3-indigo">
+  <div class="w3-container w3-center w3-animate-zoom">
+  <center>
+    <h1><b>Fact!</b></h1>
+    <h1><i>you have spend 10+ seconds while reading first two slide contents.</i></h1>
+  </center>
+  </div>
+  </div>
+  <!--slide 3 end-->
+ 
+</div>
+<!--slides end-->
+<!--mid content start-->
+<div class="w3-row w3-indigo">
+    <div class="w3-col" style="width:40%">
+	<p>
+	<center>
+	<h1>
+	Important lines!
+	</h1>
+	</center>
+	<!--left side for navigation content-->
+	</p>
+	</div>
+    <div class="w3-col" style="width:60%">
+	<p>
+	<center>
+	<h1>
+	Heading!
+	</h1>
+	</center>
+	<!--right side for content-->
+	</p>
+	</div>
+</div>
+<!--mid content end-->
+
+<!--footer-->
+<footer class="w3-container w3-indigo">
+  <center><h5>&copy;Rabbit Ninja</h5></center>
+</footer>
+<!--footer end-->
+<!--slides script-->
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000); 
+}
+</script>
+
+<!--slides script end-->
+</body>
+</html> 
